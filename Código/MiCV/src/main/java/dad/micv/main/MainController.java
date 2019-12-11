@@ -2,7 +2,10 @@ package dad.micv.main;
 
 import java.io.IOException;
 
+import dad.micv.tabs.conocimientos.ConocimientosController;
 import dad.micv.tabs.contacto.ContactoController;
+import dad.micv.tabs.experiencia.ExperienciaController;
+import dad.micv.tabs.formacion.FormacionController;
 import dad.micv.tabs.personal.PersonalController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +21,9 @@ public class MainController {
 	
 	PersonalController personalController = new PersonalController();
 	ContactoController contactoController = new ContactoController();
+	FormacionController formacionController = new FormacionController();
+	ExperienciaController experienciaController = new ExperienciaController();
+	ConocimientosController conocimientosController = new ConocimientosController();
 	
 	@FXML
 	VBox raiz;
@@ -68,6 +74,9 @@ public class MainController {
 				
 				personalTab.setContent(personalController.getRoot());
 				contactoTab.setContent(contactoController.getRoot());
+				formacionTab.setContent(formacionController.getRoot());
+				experienciaTab.setContent(experienciaController.getRoot());
+				conocimientosTab.setContent(conocimientosController.getRoot());
 				
 			} catch (IOException e) {
 				e.printStackTrace();

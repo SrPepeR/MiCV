@@ -46,7 +46,7 @@ public class ContactoController {
 			@FXML
 			Button removeWeb;
 	
-	Alert addAlert = new Alert(AlertType.CONFIRMATION);;
+	Alert addAlert = new Alert(AlertType.CONFIRMATION);
 		
 	public ContactoController() {
 		

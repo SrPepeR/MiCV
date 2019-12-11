@@ -8,7 +8,7 @@
 
 <HBox fx:id="root" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TableView fx:id="formacionTable" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+      <TableView fx:id="experienciaTable" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
       <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="NEVER">
          <children>
             <Button fx:id="addButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Añadir" />

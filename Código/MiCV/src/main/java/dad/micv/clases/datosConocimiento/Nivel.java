@@ -2,18 +2,24 @@ package dad.micv.clases.datosConocimiento;
 
 public enum Nivel {
 	
-	BASICO(1),
-	MEDIO(2),
-	AVANZADO(3);
+	BASICO("Básico", 1),
+	MEDIO("Medio", 2),
+	AVANZADO("Avanzado", 3);
 	
 	private final int value;
+	private final String text;
 	
-	private Nivel(final int newValue) {
+	private Nivel(final String newText, final int newValue) {
 		this.value = newValue;
+		this.text = newText;
 	}
 	
 	public int get() {
 		return this.value;
+	}
+	
+	public String getText() {
+		return this.text;
 	}
 	
 }

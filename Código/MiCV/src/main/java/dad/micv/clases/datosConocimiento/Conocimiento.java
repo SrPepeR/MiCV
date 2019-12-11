@@ -4,6 +4,7 @@ public class Conocimiento extends Idioma {
 	
 	private String denominacion;
 	private int nivel;
+	private String nivelStr;
 	
 	public String getDenominacion() {
 		return denominacion;
@@ -16,6 +17,10 @@ public class Conocimiento extends Idioma {
 	}
 	public void setNivel(Nivel nivel) {
 		this.nivel = nivel.get();
+		this.nivelStr = nivel.getText();
+	}
+	public String getNivelStr() {
+		return nivelStr;
 	}
 	
 	public Conocimiento get() {

@@ -15,7 +15,7 @@ public class App extends Application{
 		
 		mainController = new MainController();
 		
-		raizScene = new Scene(mainController.getRoot());
+		raizScene = new Scene(mainController.getRoot(), 750, 750);
 		raizStage = new Stage();
 		raizStage.setTitle("MainView.fxml");
 		raizStage.setScene(raizScene);
